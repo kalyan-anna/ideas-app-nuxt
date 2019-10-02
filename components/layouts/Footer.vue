@@ -1,6 +1,6 @@
 <template>
   <footer class="layout__footer">
-    <div>Authour: Kalyan Annamalai</div>
+    <div>Author: Kalyan Annamalai</div>
     <div>
       Contact
       <a href="mailto:kalyan.anna@yahoo.com">kalyan.anna@yahoo.com</a>
