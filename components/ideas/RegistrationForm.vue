@@ -30,7 +30,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "nuxt-property-decorator";
-import { Idea } from "@/types/idea";
+import { Idea } from "@/models/idea";
 
 @Component({})
 export default class RegistrationForm extends Vue {
