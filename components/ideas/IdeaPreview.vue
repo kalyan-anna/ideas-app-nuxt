@@ -12,7 +12,7 @@ import { Component, Prop, Vue } from "nuxt-property-decorator";
 import { Idea } from "../../models/idea";
 
 @Component({})
-export default class IdeaDetail extends Vue {
+export default class IdeaPreview extends Vue {
   @Prop({ type: Object })
   public idea!: Idea;
 }

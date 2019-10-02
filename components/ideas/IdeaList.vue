@@ -1,17 +1,17 @@
 <template>
   <div>
-    <IdeaDetail v-for="idea in ideas" :key="idea.id" :idea="idea"></IdeaDetail>
+    <IdeaPreview v-for="idea in ideas" :key="idea.id" :idea="idea"></IdeaPreview>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "nuxt-property-decorator";
 import { Idea } from "../../models/idea";
-import IdeaDetail from "./IdeaDetail.vue";
+import IdeaPreview from "./IdeaPreview.vue";
 
 @Component({
   components: {
-    IdeaDetail
+    IdeaPreview
   }
 })
 export default class IdeaList extends Vue {
