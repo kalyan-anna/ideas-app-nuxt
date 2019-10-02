@@ -3,7 +3,9 @@ import { RootState } from '../types';
 import { ActionTree, ActionContext, MutationTree, GetterTree } from 'vuex';
 
 export interface IdeasState {
-  [key: string]: Idea;
+  ideas: {
+    [key: string]: Idea;
+  };
 }
 
 export type IdeaActionContext = ActionContext<IdeasState, RootState>;

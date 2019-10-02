@@ -4,12 +4,12 @@ import { Idea } from '~/models/idea';
 export const mutations: IdeasMutations = {
   loadAll: (state, ideas: Idea[]) => {
     ideas.forEach(idea => {
-      state[idea.id] = idea;
+      state.ideas[idea.id] = idea;
     });
   },
 
   register: (state, idea) => {
-    state[idea.id] = idea;
+    state.ideas[idea.id] = idea;
   }
 };
 
