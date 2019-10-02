@@ -1,6 +1,6 @@
 <template>
   <header class="layout__header">
-    <div>Ideas...</div>
+    <h1>IDEAS...</h1>
   </header>
 </template>
 
@@ -14,5 +14,7 @@ export default class Header extends Vue {}
 <style scoped lang="scss">
 .layout__header {
   height: 60px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 </style>
