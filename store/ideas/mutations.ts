@@ -1,11 +1,11 @@
 import { IdeasMutations } from './types';
 
 export const mutations: IdeasMutations = {
-  loadAll: (state, ideas) => {
-    state.ideas = {};
-  },
+  loadAll: (state, ideas) => {},
 
-  register: (state, idea) => {}
+  register: (state, idea) => {
+    state[idea.id] = idea;
+  }
 };
 
 export default mutations;

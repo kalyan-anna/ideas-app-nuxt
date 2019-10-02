@@ -41,8 +41,7 @@ export default class RegistrationForm extends Vue {
   }
 
   onSubmit() {
-    console.log({ ...this.form });
-    this.$nuxt.$router.push("/");
+    this.$emit("submit", { ...this.form });
   }
 
   get isValid(): boolean {
