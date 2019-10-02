@@ -1,7 +1,7 @@
 export default {
   env: {},
   head: {
-    title: '{{ name }}',
+    title: 'Ideas',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -11,7 +11,12 @@ export default {
   },
   loading: { color: '#3B8070' },
   build: {},
-  buildModules: ['@nuxt/typescript-build'],
+  css: ['@/assets/styles/index.scss'],
+  buildModules: ['@nuxt/typescript-build', 'bootstrap-vue/nuxt'],
   modules: ['@nuxtjs/axios'],
-  axios: {}
+  axios: {},
+  bootstrapVue: {
+    bootstrapCSS: false, // Or `css: false`
+    bootstrapVueCSS: false // Or `bvCSS: false`
+  }
 };
