@@ -16,6 +16,10 @@ export default class Header extends Vue {}
 </script>
 
 <style scoped lang="scss">
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+
 .layout__footer {
   max-height: 120px;
   width: 100%;
@@ -24,5 +28,9 @@ export default class Header extends Vue {}
   flex-direction: column;
   text-align: center;
   justify-content: space-around;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
 }
 </style>
