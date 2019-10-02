@@ -1,6 +1,6 @@
 <template>
   <div class="registration__container">
-    <b-form @submit="onSubmit">
+    <b-form @submit.prevent="onSubmit">
       <b-form-group label="Title:" label-for="title">
         <b-form-input id="title" v-model="form.title" placeholder="Enter title"></b-form-input>
       </b-form-group>
