@@ -18,5 +18,12 @@ import { Idea } from "../../models/idea";
 export default class extends Vue {
   @ideasModule.Getter("getIdeas")
   public ideas!: Idea[];
+
+  @ideasModule.Action("loadAll")
+  private loadAll!: () => Promise<Idea[]>;
+
+  created() {
+    this.loadAll();
+  }
 }
 </script>
