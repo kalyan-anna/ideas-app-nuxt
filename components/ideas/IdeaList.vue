@@ -17,5 +17,9 @@ import IdeaPreview from "./IdeaPreview.vue";
 export default class IdeaList extends Vue {
   @Prop({ type: Array })
   ideas!: Idea[];
+
+  created() {
+    console.log("ideas...", this.ideas);
+  }
 }
 </script>
