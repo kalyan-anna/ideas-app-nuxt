@@ -2,6 +2,10 @@
 
 > My peachy Nuxt.js project
 
+Deployed to AWS
+http://vue-idea-app.s3-website-ap-southeast-2.amazonaws.com/
+
+
 ## Build Setup
 
 ``` bash
