@@ -18,5 +18,6 @@ export default {
   bootstrapVue: {
     bootstrapCSS: false, // Or `css: false`
     bootstrapVueCSS: false // Or `bvCSS: false`
-  }
+  },
+  plugins: [{ src: '~plugins/ga.js', ssr: false }]
 };
