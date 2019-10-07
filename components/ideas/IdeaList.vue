@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="idea-list__containr">
     <IdeaPreview v-for="idea in ideas" :key="idea.id" :idea="idea"></IdeaPreview>
   </div>
 </template>
@@ -19,3 +19,13 @@ export default class IdeaList extends Vue {
   ideas!: Idea[];
 }
 </script>
+
+<style scoped>
+.idea-list__containr {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+</style>
