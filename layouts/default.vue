@@ -1,7 +1,7 @@
 <template>
-  <div class="container-fluid layout__container">
+  <div class="layout__container">
     <Header></Header>
-    <main class="layout__main">
+    <main class="container-fluid layout__main">
       <nuxt />
     </main>
     <Footer></Footer>
@@ -28,6 +28,7 @@ export default class extends Vue {}
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  padding: 0;
 }
 
 .layout__main {
