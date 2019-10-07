@@ -1,6 +1,9 @@
 # ideas-app-nuxt
 
-> My peachy Nuxt.js project
+
+Deployed to AWS . 
+http://vue-idea-app.s3-website-ap-southeast-2.amazonaws.com/
+
 
 ## Build Setup
 
@@ -19,4 +22,3 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
